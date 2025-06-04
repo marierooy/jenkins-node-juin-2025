@@ -11,4 +11,20 @@ app.get('/', (req, res) => {
   res.sendFile(filePath);
 });
 
+app.get('/etudiant/1', (req, res) => {
+    res.json({
+        id: 1,
+        name: "Alain",
+        age: 22
+    });
+});
+
+app.get('/etudiant/2', (req, res) => {
+    res.json({
+        id: 2,
+        name: "Céline",
+        age: 40
+    });
+});
+
 app.listen(80 , function(){ console.log("serveur express start") });
