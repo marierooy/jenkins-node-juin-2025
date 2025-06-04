@@ -27,6 +27,4 @@ app.get('/etudiant/2', (req, res) => {
     });
 });
 
-app.listen(80 , function(){ console.log("serveur express start") });
-
 module.exports = app;
